@@ -61,6 +61,39 @@ button:hover{
   cursor: pointer;
 }
 
+.spinner{
+  width: 5rem;
+  height: 5rem;
+  border: 0.2rem solid rgba(150, 165, 180, 0.445);
+  border-top-color:#e92828 ;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  position: absolute;
+  top:50%;
+  left:44%;
+  transform: translate(-44%, -50%);
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+}
+
+.category{
+  color: slategray;
+  margin-bottom: 1rem;
+}
+
+.category span{
+  color: #a3b4c4;
+  font-weight: bold;
+  text-transform: capitalize;
+
+}
+
 .section{
   padding: 1.25rem;
 }
@@ -94,7 +127,7 @@ button:hover{
 }
 
 .section .cards div{
-  color: #070708;
+  background-color: #070708;
   padding: 1rem;
   border-radius: 0.625rem;
 }
@@ -137,7 +170,7 @@ button:hover{
 @media(min-width: 1024px){
   
   .section .title h1{
-    font-size:6rem;
+    font-size:3rem;
   }
   form{
     display:flex;
@@ -145,6 +178,10 @@ button:hover{
   }
   input{
     width: 100%;
+    font-size: 1.5rem;
+  }
+  button{
+    font-size: 1.5rem;
   }
   .section{
     max-width: 992px;
